@@ -69,12 +69,7 @@ export const useNotes = () => {
       return notes;
     }
 
-    return notes.filter((note) => {
-      return (
-        note.title.toLowerCase().includes(keyword) ||
-        note.content.toLowerCase().includes(keyword)
-      );
-    });
+    return notes.filter((note) => note.title.toLowerCase().includes(keyword));
   }, [notes, searchText]);
 
   const addNote = () => {

@@ -53,7 +53,7 @@ export const NoteList = ({
         <p className="font-mono text-lg font-black uppercase tracking-normal text-glow">
           Markdown Notes
         </p>
-        <p className="mt-1 text-sm text-zinc-500">鱼皮的笔记本</p>
+        <p className="mt-1 text-sm text-zinc-500">我的笔记本</p>
       </div>
 
       <div className="px-4 py-4 lg:py-5">
@@ -61,7 +61,7 @@ export const NoteList = ({
           value={searchText}
           onChange={(event) => onSearchChange(event.target.value)}
           className="h-12 w-full border border-line bg-panel px-4 font-mono text-sm text-zinc-100 outline-none transition focus:border-glow"
-          placeholder="搜索笔记..."
+          placeholder="按标题搜索笔记..."
         />
       </div>
 
